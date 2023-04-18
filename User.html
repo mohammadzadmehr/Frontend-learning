@@ -51,8 +51,7 @@
 
      <!-- <______   home section __________________ Start _____________________________  ___> -->
 
-<section id="top_action_section" class="row">
-
+<section id="top_action_section" class="row container">
 <!-- ______  Search Section __________ __-->
 <div class="row col s12 m6 l8">
   <div class="input-field col s12">
@@ -60,16 +59,12 @@
     <label for="search">
       <i class="material-icons pos-relative top-7">search</i>
       Search</label>
-
   </div>
 </div>
-
-
  </div>
-
 <!-- _______ Add Button _______________-->
 <div class="p-r-10 p-l-10 p-t-10 col s12 m3 l2">
-    <button class="waves-effect waves-light btn darken-2 p-l-30 p-r-30 w-full rounded_pill flex-c">
+    <button id="add_user_button" class="waves-effect waves-light btn darken-2 p-l-30 p-r-30 w-full rounded_pill flex-c">
         <i class="material-icons m-r-5">add</i>
         Add User  
     </button>
@@ -239,13 +234,61 @@
 </table>
 
 </div>
+<div class="pagination_contaner container p-l-9 p-r-9 p-t-15 p-b-10 flex-sb-m pos-fixed left-0 right-0 bottom-0 z-depth-5 rounded_top_30 filter_shadow ">
+<div class="pagination_item_counts flex-1 p-l-10 flex-l-m">
+Showing 
+<span class="m-l-5 m-r-5 max-w-50">
+  <input type="number" class="blue-text darken-2 no-border center-align m-b-0 " value="10">
+</span>
+Of
+<span class="blue-text darken-2 m-l-5 m-r-5 ">100</span>
+</div>  
 
+<div class="pagination_buttons">
+
+  <i class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill ">keyboard_arrow_left</i>
+  <i class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text rounded_pill ">keyboard_arrow_right</i>
+</div>
+
+</div>
 
   </section>
   
+
+  <div class="add_user_modal_back dis-none"></div>
+  <div class="add_user_modal container ">
+  <div class="row p-t-10 p-b-10 p-r-40 p-l-40 center-on-small-only">
+    <h6>
+      <i class="material-icons m-r-10 m-l-10 pos-relative top-4 ">person_add</i>
+      Add user
+    </h6>
+
+<form action="">
+<div class="input-field col s12 ">
+<input id="name" type="text" class="validate">
+<label for="name"> Name : </label>
+</div>
+
+<div class="input-field col s12 ">
+  <input id="username" type="text" class="validate">
+  <label for="username"> Username : </label>
+  </div>
+
+  <div class="input-field col s12 ">
+    <input id="email" type="email" class="validate">
+    <label for="email"> Email : </label>
+    </div>
+ <button type="button" class="waves-effect waves-light btn blue darken-1 m-t-20 m-b-10 w-full max-w-250 rounded_pill f-bold">
+ Submit 
+ </button>
   
+</form>
+
+
+
+  </div>
   
-  
+</div>
   
   
   
